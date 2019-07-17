@@ -1,0 +1,73 @@
+<DOCTYPE html>
+  <!--
+    Name: Levi Schwartzberg
+    Date Created: 7/3/2019
+    Most Recent Revision:
+
+    -->
+
+<html>
+<html lang="en">
+
+<main>
+  <head>
+    <title> Lucky Sevens </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Barriecito|Righteous&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="luckySevens.js">
+    </script>
+
+    <link href="luckySevens.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <!-- onload, the welcome function informs the user about the game -->
+  <body onload="welcome();">
+    <header class="page_head">
+      <h1> Lucky Sevens </h1>
+    </header>
+
+    <br /> <br />
+    <div class="container">
+
+      <!-- Form calls playgame function on the press of the play button -->
+      <form name="sevens" onsubmit="return playGame();" onreset="return resetForm();" class="form-inline">
+        <fieldset class="user_input">
+          <div class="user_input">
+              <label for="bet">Starting Bet</label>
+              <!-- Starting bet wirh type float to allow for decimals (not that they make much difference in this game) and a placeholder of $0.00 -->
+              <input type="float" id="bet" placeholder="$0.00" />
+          </div>
+        </fieldset>
+        <br />
+        <!-- Play buttong plays the game -->
+        <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+        <!-- play again button appears after the game is played and resets the form to allow for another try -->
+        <button type="reset" id="resetButton" class="btn btn-default" style="display:none;">Play Again</button>
+      </form>
+
+      <!-- table appears after game is played -->
+      <table id="results_table" class="table table-striped" style="display:none;">
+        <h2 id="results" style="display:none"> Results! </h2>
+        <tr>
+          <td> Starting Bet </td>
+          <td><span id="money"></span></td>
+        </tr>
+        <tr>
+          <td> Total Rolls Before Going Broke </td>
+          <td><span id="plays"></span></td>
+        </tr>
+        <tr>
+          <td> Highest Amount Won </td>
+          <td><span id="max"></span></td>
+        </tr>
+        <tr>
+          <td> Roll Count at Highest Amount Won </td>
+          <td><span id="till_max"></span></td>
+        </tr>
+      <table>
+    <div>
+
+  </body>
+</main>

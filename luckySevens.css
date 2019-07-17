@@ -1,0 +1,40 @@
+body {
+  background-color: #ecd9c6;
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background-color: #669900;
+  height: 80px;
+  text-align: center;
+  padding: 0px 20px 5px 20px;
+}
+
+header, h1 {
+  font-size: 2em;
+  font-family: 'Righteous', cursive;
+}
+
+div.user_input {
+  text-align: center;
+  font-family: 'Barriecito', cursive;
+  font-size: 2.5em;
+}
+
+fieldset.user_input {
+  align-self: center;
+  width: 40%;
+}
+
+table {
+  padding: 5px
+}
+
+tr:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: white;
+}
